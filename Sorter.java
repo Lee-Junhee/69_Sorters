@@ -47,7 +47,8 @@ abstract class Sorter {
         return true;
     }
 
-    protected String debug() {
-        return "current state of the array: " + toString();
+    protected String debug(int run) {
+        return "current state of the array: " + toString()
+             + "    run: " + run;
     }
 }

@@ -23,7 +23,7 @@ public class InsertionSorter extends Sorter {
       for(int elementToInsert = 1;
         elementToInsert < elements.size();
         insert(elementToInsert++)){
-          System.out.println(debug());
+          System.out.println(debug(elementToInsert - 1));
         }
     }
 

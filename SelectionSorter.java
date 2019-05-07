@@ -23,7 +23,7 @@ public class SelectionSorter extends Sorter {
         for(int numSorted = 0;
             numSorted < elements.size() - 1;
             select(numSorted++)){
-              System.out.println(debug());
+              System.out.println(debug(numSorted));
             }
     }
 
