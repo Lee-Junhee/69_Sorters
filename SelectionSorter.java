@@ -10,7 +10,7 @@ public class SelectionSorter extends Sorter {
      */
     public SelectionSorter(  ArrayList< String> usersData) {
       super(usersData);
-      mySort();  
+      //mySort();  
       // your code here, if necessary
     }
     
@@ -22,7 +22,9 @@ public class SelectionSorter extends Sorter {
     public void mySort() {
         for(int numSorted = 0;
             numSorted < elements.size() - 1;
-            select(numSorted++)){}
+            select(numSorted++)){
+              System.out.println(debug());
+            }
     }
 
     public void select(int startAt) {

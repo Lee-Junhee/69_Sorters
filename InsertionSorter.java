@@ -10,7 +10,7 @@ public class InsertionSorter extends Sorter {
      */
     public InsertionSorter(  ArrayList< String> usersData) {
       super(usersData);
-      mySort();  
+      //mySort();  
       // your code here, if necessary
     }
     
@@ -22,7 +22,9 @@ public class InsertionSorter extends Sorter {
     public void mySort() {
       for(int elementToInsert = 1;
         elementToInsert < elements.size();
-        insert(elementToInsert++)){}
+        insert(elementToInsert++)){
+          System.out.println(debug());
+        }
     }
 
     private void insert(int numSorted) {

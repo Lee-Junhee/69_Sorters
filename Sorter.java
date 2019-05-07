@@ -46,4 +46,8 @@ abstract class Sorter {
             if( elements.get(i).compareTo( elements.get(i+1)) > 0) return false;
         return true;
     }
+
+    protected String debug() {
+        return "current state of the array: " + toString();
+    }
 }
