@@ -16,9 +16,14 @@ public class SelectionSorter extends Sorter {
     
 
     /**
-      sort the user's data, implementing insertion sort
-      insertionSort based off work from Piazza@404, work by Si Liang Lei
+      sort the user's data, implementing selection sort
       */
+    
+    /*
+      precondition(s): a list of elements
+      synopsis: Run select for positions 0 through n–2 in the list.
+      postcondition(s): a sorted list of elements
+    */
     public void mySort() {
         for(int numSorted = 0;
             numSorted < elements.size() - 1;
@@ -27,6 +32,12 @@ public class SelectionSorter extends Sorter {
             }
     }
 
+    /*
+      precondition(s): a list of elements, the first n elements are sorted
+      synopsis: Find the smallest value in the unsorted region.
+                Swap it with the first value in the unsorted region.
+      postcondition(s): a list of elements, the first n + 1 elements are sorted
+    */
     public void select(int startAt) {
         int dweebIndex;
         for(int indexToCompare = (dweebIndex = startAt) + 1;

@@ -19,6 +19,11 @@ public class InsertionSorter extends Sorter {
       sort the user's data, implementing insertion sort
       insertionSort based off work from Piazza@404, work by Si Liang Lei
       */
+    /*
+      precondition(s): a list of n elements
+      synopsis: Run insert for positions 1 through n–1 in the list.
+      postcondition(s): a sorted list of n elements
+    */
     public void mySort() {
       for(int elementToInsert = 1;
         elementToInsert < elements.size();
@@ -27,6 +32,12 @@ public class InsertionSorter extends Sorter {
         }
     }
 
+    /*
+      preconditions(s): a list of elements, the first n elements of the list are sorted
+      synopsis: Insert the first unsorted element in its place in the current sorted region,
+                shifting all larger values, to make space.
+      postcondition(s): a list of elements, the first n + 1 elements of the list are sorted
+    */
     private void insert(int numSorted) {
       String valueToInsert = elements.get(numSorted);
       int indexToCompare;
